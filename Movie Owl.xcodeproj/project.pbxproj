@@ -10,12 +10,12 @@
 		CAF90EB82857C2BC001274FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90EB72857C2BC001274FE /* AppDelegate.swift */; };
 		CAF90EBA2857C2BC001274FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90EB92857C2BC001274FE /* SceneDelegate.swift */; };
 		CAF90EBC2857C2BC001274FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90EBB2857C2BC001274FE /* ViewController.swift */; };
-		CAF90EBF2857C2BC001274FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAF90EBD2857C2BC001274FE /* Main.storyboard */; };
 		CAF90EC12857C2BD001274FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAF90EC02857C2BD001274FE /* Assets.xcassets */; };
 		CAF90EC42857C2BD001274FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAF90EC22857C2BD001274FE /* LaunchScreen.storyboard */; };
 		CAF90ECF2857C2BD001274FE /* Movie_OwlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90ECE2857C2BD001274FE /* Movie_OwlTests.swift */; };
 		CAF90ED92857C2BD001274FE /* Movie_OwlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90ED82857C2BD001274FE /* Movie_OwlUITests.swift */; };
 		CAF90EDB2857C2BD001274FE /* Movie_OwlUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90EDA2857C2BD001274FE /* Movie_OwlUITestsLaunchTests.swift */; };
+		CAF90EE92857C422001274FE /* JsHelper in Frameworks */ = {isa = PBXBuildFile; productRef = CAF90EE82857C422001274FE /* JsHelper */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 		CAF90EB72857C2BC001274FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAF90EB92857C2BC001274FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CAF90EBB2857C2BC001274FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CAF90EBE2857C2BC001274FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAF90EC02857C2BD001274FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAF90EC32857C2BD001274FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAF90EC52857C2BD001274FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAF90EE92857C422001274FE /* JsHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +102,6 @@
 				CAF90EB72857C2BC001274FE /* AppDelegate.swift */,
 				CAF90EB92857C2BC001274FE /* SceneDelegate.swift */,
 				CAF90EBB2857C2BC001274FE /* ViewController.swift */,
-				CAF90EBD2857C2BC001274FE /* Main.storyboard */,
 				CAF90EC02857C2BD001274FE /* Assets.xcassets */,
 				CAF90EC22857C2BD001274FE /* LaunchScreen.storyboard */,
 				CAF90EC52857C2BD001274FE /* Info.plist */,
@@ -143,6 +142,9 @@
 			dependencies = (
 			);
 			name = "Movie Owl";
+			packageProductDependencies = (
+				CAF90EE82857C422001274FE /* JsHelper */,
+			);
 			productName = "Movie Owl";
 			productReference = CAF90EB42857C2BC001274FE /* Movie Owl.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +217,9 @@
 				Base,
 			);
 			mainGroup = CAF90EAB2857C2BC001274FE;
+			packageReferences = (
+				CAF90EE72857C422001274FE /* XCRemoteSwiftPackageReference "JsHelper" */,
+			);
 			productRefGroup = CAF90EB52857C2BC001274FE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +238,6 @@
 			files = (
 				CAF90EC42857C2BD001274FE /* LaunchScreen.storyboard in Resources */,
 				CAF90EC12857C2BD001274FE /* Assets.xcassets in Resources */,
-				CAF90EBF2857C2BC001274FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +301,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CAF90EBD2857C2BC001274FE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CAF90EBE2857C2BC001274FE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CAF90EC22857C2BD001274FE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +416,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -440,11 +436,12 @@
 				DEVELOPMENT_TEAM = HB3E67YK35;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Movie Owl/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,11 +465,12 @@
 				DEVELOPMENT_TEAM = HB3E67YK35;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Movie Owl/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -602,6 +600,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CAF90EE72857C422001274FE /* XCRemoteSwiftPackageReference "JsHelper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JemAlvarez/JsHelper";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CAF90EE82857C422001274FE /* JsHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CAF90EE72857C422001274FE /* XCRemoteSwiftPackageReference "JsHelper" */;
+			productName = JsHelper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CAF90EAC2857C2BC001274FE /* Project object */;
 }
