@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		CAF90EB82857C2BC001274FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90EB72857C2BC001274FE /* AppDelegate.swift */; };
 		CAF90EBA2857C2BC001274FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90EB92857C2BC001274FE /* SceneDelegate.swift */; };
-		CAF90EBC2857C2BC001274FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90EBB2857C2BC001274FE /* ViewController.swift */; };
+		CAF90EBC2857C2BC001274FE /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90EBB2857C2BC001274FE /* TabBar.swift */; };
 		CAF90EC12857C2BD001274FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAF90EC02857C2BD001274FE /* Assets.xcassets */; };
 		CAF90EC42857C2BD001274FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAF90EC22857C2BD001274FE /* LaunchScreen.storyboard */; };
 		CAF90ECF2857C2BD001274FE /* Movie_OwlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90ECE2857C2BD001274FE /* Movie_OwlTests.swift */; };
 		CAF90ED92857C2BD001274FE /* Movie_OwlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90ED82857C2BD001274FE /* Movie_OwlUITests.swift */; };
 		CAF90EDB2857C2BD001274FE /* Movie_OwlUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90EDA2857C2BD001274FE /* Movie_OwlUITestsLaunchTests.swift */; };
-		CAF90EE92857C422001274FE /* JsHelper in Frameworks */ = {isa = PBXBuildFile; productRef = CAF90EE82857C422001274FE /* JsHelper */; };
+		CAF90EEC2857C83A001274FE /* JsHelper in Frameworks */ = {isa = PBXBuildFile; productRef = CAF90EEB2857C83A001274FE /* JsHelper */; };
+		CAF90EF12857CCE9001274FE /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90EF02857CCE9001274FE /* HomeVC.swift */; };
+		CAF90EF32857CD2C001274FE /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90EF22857CD2C001274FE /* SearchVC.swift */; };
+		CAF90EF52857CD52001274FE /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90EF42857CD52001274FE /* SettingsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,7 @@
 		CAF90EB42857C2BC001274FE /* Movie Owl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie Owl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF90EB72857C2BC001274FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAF90EB92857C2BC001274FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CAF90EBB2857C2BC001274FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CAF90EBB2857C2BC001274FE /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		CAF90EC02857C2BD001274FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAF90EC32857C2BD001274FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAF90EC52857C2BD001274FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +51,9 @@
 		CAF90ED42857C2BD001274FE /* Movie OwlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movie OwlUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF90ED82857C2BD001274FE /* Movie_OwlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie_OwlUITests.swift; sourceTree = "<group>"; };
 		CAF90EDA2857C2BD001274FE /* Movie_OwlUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie_OwlUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CAF90EF02857CCE9001274FE /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		CAF90EF22857CD2C001274FE /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		CAF90EF42857CD52001274FE /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAF90EE92857C422001274FE /* JsHelper in Frameworks */,
+				CAF90EEC2857C83A001274FE /* JsHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +105,11 @@
 		CAF90EB62857C2BC001274FE /* Movie Owl */ = {
 			isa = PBXGroup;
 			children = (
+				CAF90EEF2857CAEE001274FE /* Models */,
+				CAF90EEE2857CADE001274FE /* ViewModels */,
+				CAF90EED2857CAD8001274FE /* Views */,
 				CAF90EB72857C2BC001274FE /* AppDelegate.swift */,
 				CAF90EB92857C2BC001274FE /* SceneDelegate.swift */,
-				CAF90EBB2857C2BC001274FE /* ViewController.swift */,
 				CAF90EC02857C2BD001274FE /* Assets.xcassets */,
 				CAF90EC22857C2BD001274FE /* LaunchScreen.storyboard */,
 				CAF90EC52857C2BD001274FE /* Info.plist */,
@@ -126,6 +134,31 @@
 			path = "Movie OwlUITests";
 			sourceTree = "<group>";
 		};
+		CAF90EED2857CAD8001274FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CAF90EF22857CD2C001274FE /* SearchVC.swift */,
+				CAF90EBB2857C2BC001274FE /* TabBar.swift */,
+				CAF90EF02857CCE9001274FE /* HomeVC.swift */,
+				CAF90EF42857CD52001274FE /* SettingsVC.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CAF90EEE2857CADE001274FE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CAF90EEF2857CAEE001274FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,7 +176,7 @@
 			);
 			name = "Movie Owl";
 			packageProductDependencies = (
-				CAF90EE82857C422001274FE /* JsHelper */,
+				CAF90EEB2857C83A001274FE /* JsHelper */,
 			);
 			productName = "Movie Owl";
 			productReference = CAF90EB42857C2BC001274FE /* Movie Owl.app */;
@@ -218,7 +251,7 @@
 			);
 			mainGroup = CAF90EAB2857C2BC001274FE;
 			packageReferences = (
-				CAF90EE72857C422001274FE /* XCRemoteSwiftPackageReference "JsHelper" */,
+				CAF90EEA2857C83A001274FE /* XCRemoteSwiftPackageReference "JsHelper" */,
 			);
 			productRefGroup = CAF90EB52857C2BC001274FE /* Products */;
 			projectDirPath = "";
@@ -262,9 +295,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAF90EBC2857C2BC001274FE /* ViewController.swift in Sources */,
+				CAF90EBC2857C2BC001274FE /* TabBar.swift in Sources */,
+				CAF90EF32857CD2C001274FE /* SearchVC.swift in Sources */,
+				CAF90EF12857CCE9001274FE /* HomeVC.swift in Sources */,
 				CAF90EB82857C2BC001274FE /* AppDelegate.swift in Sources */,
 				CAF90EBA2857C2BC001274FE /* SceneDelegate.swift in Sources */,
+				CAF90EF52857CD52001274FE /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,7 +638,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CAF90EE72857C422001274FE /* XCRemoteSwiftPackageReference "JsHelper" */ = {
+		CAF90EEA2857C83A001274FE /* XCRemoteSwiftPackageReference "JsHelper" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/JemAlvarez/JsHelper";
 			requirement = {
@@ -613,9 +649,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CAF90EE82857C422001274FE /* JsHelper */ = {
+		CAF90EEB2857C83A001274FE /* JsHelper */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CAF90EE72857C422001274FE /* XCRemoteSwiftPackageReference "JsHelper" */;
+			package = CAF90EEA2857C83A001274FE /* XCRemoteSwiftPackageReference "JsHelper" */;
 			productName = JsHelper;
 		};
 /* End XCSwiftPackageProductDependency section */
