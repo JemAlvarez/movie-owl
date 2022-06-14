@@ -8,7 +8,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        if let window = makeWindow(for: scene, with: TabBar()) {
+        if let window = makeWindow(for: scene, with: TabBarVC()) {
             self.window = window
         }
     }

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CAF90EB82857C2BC001274FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90EB72857C2BC001274FE /* AppDelegate.swift */; };
 		CAF90EBA2857C2BC001274FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90EB92857C2BC001274FE /* SceneDelegate.swift */; };
-		CAF90EBC2857C2BC001274FE /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90EBB2857C2BC001274FE /* TabBar.swift */; };
+		CAF90EBC2857C2BC001274FE /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90EBB2857C2BC001274FE /* TabBarVC.swift */; };
 		CAF90EC12857C2BD001274FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAF90EC02857C2BD001274FE /* Assets.xcassets */; };
 		CAF90EC42857C2BD001274FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAF90EC22857C2BD001274FE /* LaunchScreen.storyboard */; };
 		CAF90ECF2857C2BD001274FE /* Movie_OwlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90ECE2857C2BD001274FE /* Movie_OwlTests.swift */; };
@@ -19,6 +19,11 @@
 		CAF90EF12857CCE9001274FE /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90EF02857CCE9001274FE /* HomeVC.swift */; };
 		CAF90EF32857CD2C001274FE /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90EF22857CD2C001274FE /* SearchVC.swift */; };
 		CAF90EF52857CD52001274FE /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90EF42857CD52001274FE /* SettingsVC.swift */; };
+		CAF90EF828581AC1001274FE /* VCExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90EF728581AC1001274FE /* VCExtensions.swift */; };
+		CAF90EFA285820C5001274FE /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90EF9285820C5001274FE /* TabBarViewModel.swift */; };
+		CAF90EFC2858217B001274FE /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90EFB2858217B001274FE /* TabBarItem.swift */; };
+		CAF90EFE285825E9001274FE /* StarsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90EFD285825E9001274FE /* StarsVC.swift */; };
+		CAF90F0228582669001274FE /* TabBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90F0128582669001274FE /* TabBarItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +47,7 @@
 		CAF90EB42857C2BC001274FE /* Movie Owl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie Owl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF90EB72857C2BC001274FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAF90EB92857C2BC001274FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CAF90EBB2857C2BC001274FE /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		CAF90EBB2857C2BC001274FE /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		CAF90EC02857C2BD001274FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAF90EC32857C2BD001274FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAF90EC52857C2BD001274FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +59,11 @@
 		CAF90EF02857CCE9001274FE /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		CAF90EF22857CD2C001274FE /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		CAF90EF42857CD52001274FE /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		CAF90EF728581AC1001274FE /* VCExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCExtensions.swift; sourceTree = "<group>"; };
+		CAF90EF9285820C5001274FE /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
+		CAF90EFB2858217B001274FE /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		CAF90EFD285825E9001274FE /* StarsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsVC.swift; sourceTree = "<group>"; };
+		CAF90F0128582669001274FE /* TabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +115,7 @@
 		CAF90EB62857C2BC001274FE /* Movie Owl */ = {
 			isa = PBXGroup;
 			children = (
+				CAF90EF628581AB2001274FE /* Shared */,
 				CAF90EEF2857CAEE001274FE /* Models */,
 				CAF90EEE2857CADE001274FE /* ViewModels */,
 				CAF90EED2857CAD8001274FE /* Views */,
@@ -137,10 +148,11 @@
 		CAF90EED2857CAD8001274FE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CAF90F002858262E001274FE /* Tab Bar */,
 				CAF90EF22857CD2C001274FE /* SearchVC.swift */,
-				CAF90EBB2857C2BC001274FE /* TabBar.swift */,
 				CAF90EF02857CCE9001274FE /* HomeVC.swift */,
 				CAF90EF42857CD52001274FE /* SettingsVC.swift */,
+				CAF90EFD285825E9001274FE /* StarsVC.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,6 +160,7 @@
 		CAF90EEE2857CADE001274FE /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				CAF90EF9285820C5001274FE /* TabBarViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -155,8 +168,26 @@
 		CAF90EEF2857CAEE001274FE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CAF90EFB2858217B001274FE /* TabBarItem.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CAF90EF628581AB2001274FE /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CAF90EF728581AC1001274FE /* VCExtensions.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		CAF90F002858262E001274FE /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				CAF90EBB2857C2BC001274FE /* TabBarVC.swift */,
+				CAF90F0128582669001274FE /* TabBarItemView.swift */,
+			);
+			path = "Tab Bar";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,9 +326,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAF90EBC2857C2BC001274FE /* TabBar.swift in Sources */,
+				CAF90EFA285820C5001274FE /* TabBarViewModel.swift in Sources */,
+				CAF90EBC2857C2BC001274FE /* TabBarVC.swift in Sources */,
 				CAF90EF32857CD2C001274FE /* SearchVC.swift in Sources */,
+				CAF90EFC2858217B001274FE /* TabBarItem.swift in Sources */,
+				CAF90EF828581AC1001274FE /* VCExtensions.swift in Sources */,
 				CAF90EF12857CCE9001274FE /* HomeVC.swift in Sources */,
+				CAF90EFE285825E9001274FE /* StarsVC.swift in Sources */,
+				CAF90F0228582669001274FE /* TabBarItemView.swift in Sources */,
 				CAF90EB82857C2BC001274FE /* AppDelegate.swift in Sources */,
 				CAF90EBA2857C2BC001274FE /* SceneDelegate.swift in Sources */,
 				CAF90EF52857CD52001274FE /* SettingsVC.swift in Sources */,
