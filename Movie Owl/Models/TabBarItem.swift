@@ -2,11 +2,12 @@
 
 import UIKit
 
-struct TabBarItem {
+struct TabBarItem: Equatable {
     let tab: Tab
     let title: String
     let image: String
     let vc: UIViewController
+    let index: Int
 
     init (tab: Tab) {
         self.tab = tab
@@ -16,18 +17,22 @@ struct TabBarItem {
             self.title = "Home"
             self.image = "house"
             self.vc = HomeVC()
+            self.index = 0
         case .stars:
-            self.title = "Stars"
-            self.image = "person.3.fill"
-            self.vc = StarsVC()
+            self.title = "Actors"
+            self.image = "person.3"
+            self.vc = ActorsVC()
+            self.index = 1
         case .search:
             self.title = "Search"
-            self.image = "sparkle.magnifyingglass"
+            self.image = "magnifyingglass"
             self.vc = SearchVC()
+            self.index = 2
         case .settings:
             self.title = "Settings"
-            self.image = "gearshape.fill"
+            self.image = "gearshape"
             self.vc = SettingsVC()
+            self.index = 3
         }
     }
 

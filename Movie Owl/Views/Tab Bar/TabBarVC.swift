@@ -3,21 +3,21 @@
 import UIKit
 import JsHelper
 
-class TabBarVC: UIViewController {
-    // model
-    let tabBarViewModel = TabBarViewModel()
+class TabBarVC: UITabBarController {
+    // tabs
+    let tabs: [TabBarItem] = [
+        TabBarItem(tab: .home),
+        TabBarItem(tab: .stars),
+        TabBarItem(tab: .search),
+        TabBarItem(tab: .settings),
+    ]
 
     // constants
-    let tabBarHeight: CGFloat = 70
-    let tabBarInset: CGFloat = 30
-
-    // vcs
-    let home = HomeVC()
-    let search = SearchVC()
-    let settings = SettingsVC()
+    private let tabBarHeight: CGFloat = 70
+    private let tabBarInset: CGFloat = 30
 
     // views
-    let tabBar: UIStackView = {
+    private let tabBarView: UIStackView = {
         // stack view
         let sv = UIStackView()
         sv.translatesAutoresizingMaskIntoConstraints = false
@@ -38,8 +38,7 @@ class TabBarVC: UIViewController {
     // did load
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .systemRed
+        self.tabBar.isHidden = true
 
         addTabBar()
         addTabs()
@@ -49,27 +48,53 @@ class TabBarVC: UIViewController {
 // MARK: - Setup tabbar ui
 extension TabBarVC {
     // add & layout tab bar
-    func addTabBar() {
-        self.view.addSubview(tabBar)
+    private func addTabBar() {
+        self.view.addSubview(tabBarView)
 
         NSLayoutConstraint.activate([
-            tabBar.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: tabBarInset),
-            tabBar.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -tabBarInset),
-            tabBar.heightAnchor.constraint(equalToConstant: tabBarHeight),
-            tabBar.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -tabBarInset)
+            tabBarView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: tabBarInset),
+            tabBarView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -tabBarInset),
+            tabBarView.heightAnchor.constraint(equalToConstant: tabBarHeight),
+            tabBarView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -tabBarInset)
         ])
     }
 
     // add tabs
-    func addTabs() {
-        for tab in tabBarViewModel.tabs {
+    private func addTabs() {
+        var vcs: [UIViewController] = []
+
+        for tab in tabs {
             let item = TabBarItemView(tab: tab)
-            tabBar.addArrangedSubview(item)
+            let tap = TabTapGestureRecognizer(target: self, action: #selector(didTap))
+            tap.tab = tab
+            item.addGestureRecognizer(tap)
+
+            // mark home as selected
+            if tab.tab == .home {
+                item.markAs(true)
+            }
+
+            tabBarView.addArrangedSubview(item)
+
+            vcs.append(tab.vc)
         }
+
+        self.viewControllers = vcs
     }
 
-    // tab change tap
-    @objc func tabDidChange() {
-
+    // objc did tap
+    @objc private func didTap(sender: TabTapGestureRecognizer) {
+        if let tab = sender.tab {
+            selectedIndex = tab.index
+            for subview in tabBarView.arrangedSubviews {
+                if let tabView = subview as? TabBarItemView {
+                    if tabView.tab == tab {
+                        tabView.markAs(true)
+                    } else {
+                        tabView.markAs(false)
+                    }
+                }
+            }
+        }
     }
 }

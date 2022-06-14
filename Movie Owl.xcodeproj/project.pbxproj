@@ -20,10 +20,11 @@
 		CAF90EF32857CD2C001274FE /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90EF22857CD2C001274FE /* SearchVC.swift */; };
 		CAF90EF52857CD52001274FE /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90EF42857CD52001274FE /* SettingsVC.swift */; };
 		CAF90EF828581AC1001274FE /* VCExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90EF728581AC1001274FE /* VCExtensions.swift */; };
-		CAF90EFA285820C5001274FE /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90EF9285820C5001274FE /* TabBarViewModel.swift */; };
 		CAF90EFC2858217B001274FE /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90EFB2858217B001274FE /* TabBarItem.swift */; };
-		CAF90EFE285825E9001274FE /* StarsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90EFD285825E9001274FE /* StarsVC.swift */; };
+		CAF90EFE285825E9001274FE /* ActorsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90EFD285825E9001274FE /* ActorsVC.swift */; };
 		CAF90F0228582669001274FE /* TabBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90F0128582669001274FE /* TabBarItemView.swift */; };
+		CAF90F042858F284001274FE /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90F032858F284001274FE /* UIColorExtensions.swift */; };
+		CAF90F062858FCB9001274FE /* Gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF90F052858FCB9001274FE /* Gestures.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,10 +61,11 @@
 		CAF90EF22857CD2C001274FE /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		CAF90EF42857CD52001274FE /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		CAF90EF728581AC1001274FE /* VCExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCExtensions.swift; sourceTree = "<group>"; };
-		CAF90EF9285820C5001274FE /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
 		CAF90EFB2858217B001274FE /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
-		CAF90EFD285825E9001274FE /* StarsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsVC.swift; sourceTree = "<group>"; };
+		CAF90EFD285825E9001274FE /* ActorsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorsVC.swift; sourceTree = "<group>"; };
 		CAF90F0128582669001274FE /* TabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemView.swift; sourceTree = "<group>"; };
+		CAF90F032858F284001274FE /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		CAF90F052858FCB9001274FE /* Gestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gestures.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +154,7 @@
 				CAF90EF22857CD2C001274FE /* SearchVC.swift */,
 				CAF90EF02857CCE9001274FE /* HomeVC.swift */,
 				CAF90EF42857CD52001274FE /* SettingsVC.swift */,
-				CAF90EFD285825E9001274FE /* StarsVC.swift */,
+				CAF90EFD285825E9001274FE /* ActorsVC.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -160,7 +162,6 @@
 		CAF90EEE2857CADE001274FE /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				CAF90EF9285820C5001274FE /* TabBarViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -177,6 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				CAF90EF728581AC1001274FE /* VCExtensions.swift */,
+				CAF90F032858F284001274FE /* UIColorExtensions.swift */,
+				CAF90F052858FCB9001274FE /* Gestures.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -326,13 +329,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAF90EFA285820C5001274FE /* TabBarViewModel.swift in Sources */,
 				CAF90EBC2857C2BC001274FE /* TabBarVC.swift in Sources */,
 				CAF90EF32857CD2C001274FE /* SearchVC.swift in Sources */,
+				CAF90F062858FCB9001274FE /* Gestures.swift in Sources */,
+				CAF90F042858F284001274FE /* UIColorExtensions.swift in Sources */,
 				CAF90EFC2858217B001274FE /* TabBarItem.swift in Sources */,
 				CAF90EF828581AC1001274FE /* VCExtensions.swift in Sources */,
 				CAF90EF12857CCE9001274FE /* HomeVC.swift in Sources */,
-				CAF90EFE285825E9001274FE /* StarsVC.swift in Sources */,
+				CAF90EFE285825E9001274FE /* ActorsVC.swift in Sources */,
 				CAF90F0228582669001274FE /* TabBarItemView.swift in Sources */,
 				CAF90EB82857C2BC001274FE /* AppDelegate.swift in Sources */,
 				CAF90EBA2857C2BC001274FE /* SceneDelegate.swift in Sources */,

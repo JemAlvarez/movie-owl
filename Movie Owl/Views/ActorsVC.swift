@@ -2,12 +2,11 @@
 
 import UIKit
 
-class StarsVC: UIViewController {
+class ActorsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = .systemBrown
     }
-
 }

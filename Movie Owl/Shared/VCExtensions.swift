@@ -10,6 +10,9 @@ extension UIViewController {
     }
 
     func remove(_ child: UIViewController) {
-        child.view.removeFromSuperview()
+        if child.parent != nil {
+            child.view.removeFromSuperview()
+            child.removeFromParent()
+        }
     }
 }
